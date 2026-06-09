@@ -10,20 +10,25 @@ function MenuCards({ name, filling, price, image }) {
 
     return (
         <div className='otadiv'>
-            <img className='pizzaimg' src={image} alt="" />
-
-            <h1 style={{ color: '#FFFFFF' }} className='textname'>{name}</h1>
-
-            <p className='filling'>{filling}</p>
-
-            <div className='divnum'>
-                <h1 className='textprice'>{price}$</h1>
-                <button onClick={() => count > 0 && setCount(count - 1)}>-</button>
-                <h1 style={{color:'gray'}}>{count}</h1>
-                <button onClick={() => setCount(count + 1)}>+</button>
+            <div className="img-container">
+                <img className='pizzaimg' src={image} alt={name} />
             </div>
 
-            <button className='order'>Order Now</button>
+            <div className="card-body">
+                <h1 className='textname'>{name}</h1>
+                <p className='filling'>{filling}</p>
+
+                <div className='divnum'>
+                    <h1 className='textprice'>{price}$</h1>
+                    <div className="counter-actions">
+                        <button onClick={() => count > 0 && setCount(count - 1)}>-</button>
+                        <span className="count-text">{count}</span>
+                        <button onClick={() => setCount(count + 1)}>+</button>
+                    </div>
+                </div>
+
+                <button className='order'>Order Now</button>
+            </div>
         </div>
     )
 }

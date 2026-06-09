@@ -66,7 +66,7 @@ function menu() {
 
   return (
     <div className='div1'>
-      <h1 style={{ color: 'white', textAlign: 'center', fontSize:'45px'}}>Menu</h1>
+      <h1 style={{ color: 'white', textAlign: 'center', fontSize: '45px' }}>Menu</h1>
 
       <div>
         <div className='cards'>
@@ -82,12 +82,8 @@ function menu() {
         </div>
       </div>
 
-      <div className='ramsdiv' style={{ position: 'relative', width: 1000, height: 300 }}>
-        <h1 style={{
-          color: 'white',
-          textAlign:'center',
-          paddingTop:'125px'
-        }}>MOST POPULAR PIZZA</h1>
+      <div className='ramsdiv'>
+        <h1 style={{ color: 'white', textAlign: 'center' }}>MOST POPULAR PIZZA</h1>
       </div>
     </div>
   )

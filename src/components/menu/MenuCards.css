@@ -1,62 +1,101 @@
 .otadiv {
     width: 295px;
-    height: 459px;
+    height: 480px; /* Bir oz moslashtirildi */
     border-radius: 29.53px;
     background-color: #210A01;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.img-container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pizzaimg {
-    position: absolute;
-    left: 50px;
-    bottom: 330px;
+    width: 130px; /* O'zingizni rasmingiz o'lchamiga qarab moslang */
+    height: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between; /* Elementlarni bir tekis tarqatadi */
 }
 
 .textname {
-    position: absolute;
-    bottom: 290px;
-    left: 100px;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 10px 0 5px 0;
 }
 
 .filling {
-    position: absolute;
     color: gray;
-    text-align: left;
-    width: 227px;
-    top: 240px;
-    left: 50px;
-}
-
-.textprice {
-    color: white;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+    min-height: 40px; /* Matn uzayib ketsa kartochka buzilmasligi uchun */
 }
 
 .divnum {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    position: absolute;
-    top: 320px;
-    left: 70px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 15px 0;
 }
 
-button {
-    width: 22px;
-    height: 23px;
+.textprice {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+
+.counter-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.count-text {
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.counter-actions button {
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background-color: #210A01;
     border: 1px solid gray;
     color: gray;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
 }
 
 .order {
-    width: 192px;
+    width: 100%;
     height: 45px;
     border-radius: 84px;
     background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
     color: white;
     border: none;
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
