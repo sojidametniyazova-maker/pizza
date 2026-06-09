@@ -1,0 +1,62 @@
+.otadiv {
+    width: 295px;
+    height: 459px;
+    border-radius: 29.53px;
+    background-color: #210A01;
+    position: relative;
+}
+
+.pizzaimg {
+    position: absolute;
+    left: 50px;
+    bottom: 330px;
+}
+
+.textname {
+    position: absolute;
+    bottom: 290px;
+    left: 100px;
+}
+
+.filling {
+    position: absolute;
+    color: gray;
+    text-align: left;
+    width: 227px;
+    top: 240px;
+    left: 50px;
+}
+
+.textprice {
+    color: white;
+}
+
+.divnum {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 320px;
+    left: 70px;
+}
+
+button {
+    width: 22px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #210A01;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.order {
+    width: 192px;
+    height: 45px;
+    border-radius: 84px;
+    background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}

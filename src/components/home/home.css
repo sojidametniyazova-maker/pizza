@@ -1,0 +1,21 @@
+h1{
+    color: white;
+    font-size: 69.17px;
+    width: 538px;
+}
+
+p{
+    color: gray;
+}
+
+.pizza{
+    position: absolute;
+    bottom: 500px;
+    left: 300px;
+}
+
+.fries{
+    position: absolute;
+    bottom: 10px;
+    right: 280px;
+}
